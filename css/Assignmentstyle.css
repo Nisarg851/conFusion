@@ -44,3 +44,22 @@ body{
     border-bottom: 1px solid #ddd;
     padding: 10px; 
 }
+
+.carousel{
+    background-color: #512DAB;
+}
+
+.img-thumbnail{
+    background-color: #000;
+}
+
+.carousel-item{
+    height: 200px;
+}
+
+.carousel-item img{
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 200px;
+}
