@@ -1,4 +1,4 @@
-//Less is an css precompiler used to add some functionalities similar to that of an programming
+//Less is an css preprocessor used to add some functionalities similar to that of an programming
 //Language 
 //once written it can be compiled into a CSS file
 //command to compile from Less to CSS
@@ -58,23 +58,22 @@ body{
     padding: 10px;
 }
 
-.carousel{
-    background-color: @background_dark;
+.carousel {                                //Nesting classes
+    background:@background-dark;
+
+    .carousel-item {
+        height: @carousel-item-height;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 300px;
+        }
+    }
 }
 
 .img-thumbnail{
     background-color: #000;
-}
-
-.carousel-item{
-    height: @carousel-item-height - 100;      //Arithmetic Operations are also possible
-}
-
-.carousel-item img{
-    position: relative;
-    top: 0;
-    left: 0;
-    min-height: 200px;
 }
 
 #carousel-btn{
