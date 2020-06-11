@@ -1,0 +1,84 @@
+//Less is an css precompiler used to add some functionalities similar to that of an programming
+//Language 
+//once written it can be compiled into a CSS file
+//command to compile from Less to CSS
+//:- lessc filename1.less filename2.css    *file name can be same or different*
+@lt_gray: #ddd;                     //variables in less
+@background_lite: #9575CD;
+@background_dark: #512DA8;
+@backgorund_pale:#D1C4E9;
+
+@carousel-item-height:300px;
+
+.zero-margin(@pad-up-dn:0px,@pad-lef-rig:0px){          //structures in less aka mixins
+    margin: 0px;                                        //they can contain default values too
+    padding: @pad-up-dn @pad-lef-rig;
+}
+
+.row-header{
+    .zero-margin();                         //using mixins without args (default values will be used)
+}
+
+.row-content{
+    .zero-margin(50px,50px);
+    border-bottom: 1px ridge;               
+    min-height:400px;   
+}
+
+.footer{
+    background-color: @backgorund_pale;        //using variables
+    .zero-margin(20px,0px);                     //mixins with arguments
+}
+
+.jumbotron{
+    .zero-margin(70px,30px);
+    background-color: @background_lite;
+    color: floralwhite;
+}
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-dark{
+    background-color:@background_dark;
+}
+
+.tab-content{
+    border-left: 1px solid @lt_gray;
+    border-right: 1px solid @lt_gray;
+    border-bottom: 1px solid @lt_gray;
+    padding: 10px;
+}
+
+.carousel{
+    background-color: @background_dark;
+}
+
+.img-thumbnail{
+    background-color: #000;
+}
+
+.carousel-item{
+    height: @carousel-item-height - 100;      //Arithmetic Operations are also possible
+}
+
+.carousel-item img{
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 200px;
+}
+
+#carousel-btn{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
