@@ -1,3 +1,10 @@
+.modal-header {
+  background-color: #512DA8;
+  color: floralwhite; }
+
+.modal-body {
+  background-color: #D1C4E9; }
+
 .row-header {
   margin: 0px;
   padding: 0px 0px; }
@@ -54,10 +61,3 @@ body {
   bottom: 0;
   right: 0;
   position: absolute; }
-
-.modal-header {
-  background-color: #512DA8;
-  color: #ffffff; }
-
-.modal-body {
-  background-color: #9575CD; }
