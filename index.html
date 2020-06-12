@@ -30,7 +30,8 @@
                     <li class="nav-item"><a href="./contactus.html" class="nav-link"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal" id="loginlink">
+                    <!-- <a data-toggle="modal" data-target="#loginModal" id="loginlink"> -->
+                <a id="loginlink">
                     <span class="fa fa-sign-in"><label for="loginlink">&nbsp;Login</label></span></a>
                 </span>
             </div>
@@ -143,7 +144,7 @@
                             data-toggle="tooltip" data-html="true" 
                             title="or contact us on<br><strong>123456789</strong>"
                             data-placement="bottom">Reserve Table</a></Button> -->
-                        <a data-toggle="modal" data-target="#reservation" style="color:black; text-decoration:none"
+                        <a id="reserveTable" style="color:black; text-decoration:none"
                             >Reserve Table</a></Button>
                 </div>
             </div>
@@ -345,6 +346,21 @@
         </script> -->
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+<!----------------------------- SCRIPT FOR ASSIGNMENT 4 -------------------------------------->
+        <script>
+            $(document).ready(() => {
+                $('#loginlink').click(()=>{
+                    $('#loginlink').attr('data-toggle','modal');
+                    $('#loginlink').attr('data-target','#loginModal');
+                });
+                $('#reserveTable').click(()=>{
+                    $('#reserveTable').attr('data-toggle','modal');
+                    $('#reserveTable').attr('data-target','#reservation');
+                });
+            });
+        </script>
+<!------------------------------------SCRIPT ENDS--------------------------------------------->
         <script>
            $(document).ready(function(){
                 $('#mycarousel').carousel({interval:1500});
