@@ -14,7 +14,7 @@
   "author": "Nisarg Mahyavanshi",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.3.0",
+    "lite-server": "^2.6.1",
     "node-sass": "^4.14.1",
     "onchange": "^7.0.2",
     "parallelshell": "^3.0.2"
